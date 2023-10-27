@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    color: azure;
+    transition: all 100ms ease;
+}
+
+body {
+    background-color: #0F0F0F;
+    /* background-image: url(./bg.png);
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(213.04, 34%, 39%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(213.04, 34%, 39%) 0, transparent 55%); */
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    gap: 2vh;
+}
+
+.header,
+.subhead {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+
+.header {
+    font-size: 60px;
+    backdrop-filter: blur(15px) saturate(100%);
+    -webkit-backdrop-filter: blur(15px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 1vh;
+    -webkit-text-stroke-width: medium;
+}
+
+.subhead {
+    font-size: 45px;
+}
+
+.mic_button {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic_button button {
+    width: 75px;
+    height: 75px;
+}
+
+.text_box {
+    width: 80vw;
+    height: 50vh;
+    backdrop-filter: blur(15px) saturate(100%);
+    -webkit-backdrop-filter: blur(15px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    overflow: auto;
+    padding: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    line-height: 28px;
+    word-spacing: 10px;
+}
+
+
+.action_box {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    backdrop-filter: blur(15px) saturate(100%);
+    -webkit-backdrop-filter: blur(15px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 1vh;
+    gap: 1vw;
+}
+
+.action_box div {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+    letter-spacing: 3px;
+}
+
+.action_box div button {
+    width: 50px;
+    height: 50px;
+}
+
+.action_box div img {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50%;
+}
+
+button:hover {
+    border: #E7E7E7 dotted;
+}
+
+img {
+    filter: invert(1);
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 14px;
+    background-color: #000000;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #000000;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #474A4B;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ADADAD;
+    /* border: 2px solid #FFFFFF; */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #CACACA;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #E7E7E7;
+}
+
+*::selection {
+    color: black;
+    background: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 45px;
+        border-radius: 0;
+    }
+
+    .subhead {
+        font-size: 15px;
+    }
+
+    .text_box {
+        width: 90vw;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .action_box {
+        justify-content: space-around;
+    }
+
+    .action_box div button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .action_box div img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .action_box div p {
+        font-size: small;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="../script/index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="../script/recog.js" defer></script> -->
+    <title>Vscript</title>
+</head>
+
+<body>
+    <div class="header">
+        <p>Vscript</p>
+    </div>
+    <div class="subhead">
+        <p>Start Transcription</p>
+    </div>
+    <div class="mic_button"><button id="toggelButton" onclick="startButton(event)"><img id="mic"src="../assets/mic_img.png" alt="Button" style="filter: invert(0.3);"></button></div>
+    <div class="text_box" id="output"></div>
+    <div class="action_box">
+        <div>
+            <button onclick="whatsapp()"><img src="../assets/whatsapp_img.png" alt="WhatsApp"></button><p>Share </p>
+        </div>
+        <div>
+            <button id="downloadbtn"><img src="../assets/download_img.png" alt="Download"></button><p>Download </p>
+            <a id="downloadLink" style="display:none;" download="data.txt"></a>
+        </div>
+    </div>
+</body>
+
+</html>
