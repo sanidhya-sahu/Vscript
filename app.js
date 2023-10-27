@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 const saveToFile = (data, filename) => {
     try {
         fs.writeFileSync(filename, data);
-        console.log(`Content saved to ${filename}`);
+        // console.log(`Content saved to ${filename}`);
     } catch (error) {
         console.error('Failed to save content to file:', error);
     }

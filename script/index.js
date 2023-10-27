@@ -75,7 +75,7 @@ $(document).ready(function() {
     $('#downloadbtn').click(function() {
         const data = output.textContent;
         const date = new Date();
-        console.log(date.getDate)
+        // console.log(date.getDate)
         const nam = `Transcript_${date}`
         downloadData(data,nam);
         $('#downloadLink')[0].click();
